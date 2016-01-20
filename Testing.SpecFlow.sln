@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing.SpecFlow", "Testing.SpecFlow\Testing.SpecFlow.csproj", "{FDF90727-73AB-4D1C-BBDB-6596405F3664}"
 EndProject
@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "root", "root", "{4C7FAFDE-C
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing.SpecFlow.Tests", "Testing.SpecFlow.Tests\Testing.SpecFlow.Tests.csproj", "{A7DA00EE-DBEF-4B2F-AC61-B70D5D752128}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{FDF90727-73AB-4D1C-BBDB-6596405F3664}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDF90727-73AB-4D1C-BBDB-6596405F3664}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDF90727-73AB-4D1C-BBDB-6596405F3664}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7DA00EE-DBEF-4B2F-AC61-B70D5D752128}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7DA00EE-DBEF-4B2F-AC61-B70D5D752128}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7DA00EE-DBEF-4B2F-AC61-B70D5D752128}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7DA00EE-DBEF-4B2F-AC61-B70D5D752128}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

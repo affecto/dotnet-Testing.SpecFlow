@@ -7,6 +7,6 @@
     <description>$description$</description>
     <projectUrl>https://github.com/affecto/dotnet-Testing.SpecFlow</projectUrl>
     <tags>affecto test tests testing specflow</tags>
-    <releaseNotes>Moved to GitHub.</releaseNotes>
+    <releaseNotes>Added a class for generating and collecting GUID identifiers.</releaseNotes>
   </metadata>
 </package>

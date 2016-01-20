@@ -17,11 +17,11 @@ namespace Affecto.Testing.SpecFlow
         {
             if (string.IsNullOrWhiteSpace(textWithId))
             {
-                throw new ArgumentException("Empty text cannot be added.", nameof(textWithId));
+                throw new ArgumentException("Empty text cannot be added.", "textWithId");
             }
             if (IsTextAdded(textWithId))
             {
-                throw new ArgumentException(string.Format("Text '{0}' already added.", textWithId), nameof(textWithId));
+                throw new ArgumentException(string.Format("Text '{0}' already added.", textWithId), "textWithId");
             }
             identifiedTexts.Add(Guid.NewGuid(), textWithId);
         }
@@ -30,7 +30,7 @@ namespace Affecto.Testing.SpecFlow
         {
             if (!IsTextAdded(textWithId))
             {
-                throw new ArgumentException(string.Format("Text '{0}' not added.", textWithId), nameof(textWithId));
+                throw new ArgumentException(string.Format("Text '{0}' not added.", textWithId), "textWithId");
             }
             return identifiedTexts.Single(text => text.Value.Equals(textWithId)).Key;
         }

@@ -7,6 +7,6 @@
 
 | Target | Build |
 | -----------------------|------------------|
-| Project | [![Build status](https://ci.appveyor.com/api/projects/status/yi262aep8pp8y65h?svg=true)](https://ci.appveyor.com/project/johannesvaltonen/dotnet-testing-specflow) |
-| Master branch | [![Build status](https://ci.appveyor.com/api/projects/status/yi262aep8pp8y65h/branch/master?svg=true)](https://ci.appveyor.com/project/johannesvaltonen/dotnet-testing-specflow/branch/master) |
-| Dev branch | [![Build status](https://ci.appveyor.com/api/projects/status/yi262aep8pp8y65h/branch/dev?svg=true)](https://ci.appveyor.com/project/johannesvaltonen/dotnet-testing-specflow/branch/dev) |
+| Project | [![Build status](https://ci.appveyor.com/api/projects/status/yi262aep8pp8y65h?svg=true)](https://ci.appveyor.com/project/affecto/dotnet-testing-specflow) |
+| Master branch | [![Build status](https://ci.appveyor.com/api/projects/status/yi262aep8pp8y65h/branch/master?svg=true)](https://ci.appveyor.com/project/affecto/dotnet-testing-specflow/branch/master) |
+| Dev branch | [![Build status](https://ci.appveyor.com/api/projects/status/yi262aep8pp8y65h/branch/dev?svg=true)](https://ci.appveyor.com/project/affecto/dotnet-testing-specflow/branch/dev) |

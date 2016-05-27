@@ -7,6 +7,6 @@
     <description>$description$</description>
     <projectUrl>https://github.com/affecto/dotnet-Testing.SpecFlow</projectUrl>
     <tags>affecto test tests testing specflow</tags>
-    <releaseNotes>Added a class for generating and collecting GUID identifiers.</releaseNotes>
+    <releaseNotes>Added a table row extension method for getting an optional Finnish format date.</releaseNotes>
   </metadata>
 </package>

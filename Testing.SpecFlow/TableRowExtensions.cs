@@ -16,6 +16,7 @@ namespace Affecto.Testing.SpecFlow
                 stringBuilder.Append(column);
                 stringBuilder.Append(" | ");
             }
+
             return stringBuilder.ToString();
         }
 
@@ -27,7 +28,7 @@ namespace Affecto.Testing.SpecFlow
         public static DateTime? GetOptionalFinnishDate(this TableRow row, string key)
         {
             string dateString = GetOptionalValue(row, key);
-            return string.IsNullOrWhiteSpace(dateString) ? (DateTime?)null : DateTime.ParseExact(dateString, "dd.MM.yyyy", CultureInfo.InvariantCulture);
+            return string.IsNullOrWhiteSpace(dateString) ? (DateTime?) null : DateTime.ParseExact(dateString, "dd.MM.yyyy", CultureInfo.InvariantCulture);
         }
 
         public static IReadOnlyCollection<string> SplitCommaSeparatedText(this TableRow row, string key)

@@ -1,43 +1,44 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Affecto.Testing.SpecFlow
 {
-    public class Identifiers
+    public abstract class Identifiers<TIdentifier>
     {
-        private readonly IDictionary<Guid, string> identifiedTexts;
+        private readonly Dictionary<string, TIdentifier> identifiers = new Dictionary<string, TIdentifier>();
 
-        public Identifiers()
+        public TIdentifier GenerateIdentifier(string key)
         {
-            identifiedTexts = new Dictionary<Guid, string>();
-        }
-
-        public void Generate(string textWithId)
-        {
-            if (string.IsNullOrWhiteSpace(textWithId))
+            if (string.IsNullOrWhiteSpace(key))
             {
-                throw new ArgumentException("Empty text cannot be added.", "textWithId");
+                throw new ArgumentException("Cannot create identifier with an empty key.", nameof(key));
             }
-            if (IsTextAdded(textWithId))
+
+            if (HasIdentifier(key))
             {
-                throw new ArgumentException(string.Format("Text '{0}' already added.", textWithId), "textWithId");
+                throw new ArgumentException($"Existing identifier found for key '{key}'.");
             }
-            identifiedTexts.Add(Guid.NewGuid(), textWithId);
+
+            TIdentifier id = GenerateIdentifierForKey();
+            identifiers[key] = id;
+            return id;
         }
 
-        public Guid Get(string textWithId)
+        public TIdentifier GetIdentifier(string key)
         {
-            if (!IsTextAdded(textWithId))
+            if (HasIdentifier(key))
             {
-                throw new ArgumentException(string.Format("Text '{0}' not added.", textWithId), "textWithId");
+                return identifiers[key];
             }
-            return identifiedTexts.Single(text => text.Value.Equals(textWithId)).Key;
+
+            throw new ArgumentException($"No identifier found for key '{key}'.");
         }
 
-        private bool IsTextAdded(string textWithId)
+        public bool HasIdentifier(string key)
         {
-            return identifiedTexts.Any(text => text.Value.Equals(textWithId));
+            return identifiers.ContainsKey(key);
         }
+
+        protected abstract TIdentifier GenerateIdentifierForKey();
     }
 }

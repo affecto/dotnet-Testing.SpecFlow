@@ -7,6 +7,6 @@
     <description>$description$</description>
     <projectUrl>https://github.com/affecto/dotnet-Testing.SpecFlow</projectUrl>
     <tags>affecto test tests testing specflow</tags>
-    <releaseNotes>Added a table row extension method for getting an optional Finnish format date.</releaseNotes>
+    <releaseNotes>Added a generic implementation for Identifiers. Added a StepBase class.</releaseNotes>
   </metadata>
 </package>

@@ -7,6 +7,6 @@
     <description>$description$</description>
     <projectUrl>https://github.com/affecto/dotnet-Testing.SpecFlow</projectUrl>
     <tags>affecto test tests testing specflow</tags>
-    <releaseNotes>Added a generic implementation for Identifiers. Added a StepBase class.</releaseNotes>
+    <releaseNotes>Added a base class for step files with thread-safe feature and scenario context access.</releaseNotes>
   </metadata>
 </package>
